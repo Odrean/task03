@@ -55,7 +55,6 @@ public class Test {
             return false;
         }
 
-        System.out.println("All tests passed");
         return true;
     }
 

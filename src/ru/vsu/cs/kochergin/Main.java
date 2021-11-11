@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 
 public class Main {
+
     private static Circle CIRCLE = new Circle(5, 3, 2);
     private static HorizontalParabola HP1 = new HorizontalParabola(0, 6, 0.25);
     private static HorizontalParabola HP2 = new HorizontalParabola(5, 2, 0.11);
@@ -21,8 +22,11 @@ public class Main {
         Locale.setDefault(Locale.ROOT);
 
         if (!test.test(picture)) {
+            System.out.println("Tests failed");
             return;
         }
+
+        System.out.println("All tests passed");
 
         double coordinateX = readCoordinatesOfPoint("x");
         double coordinateY = readCoordinatesOfPoint("y");
